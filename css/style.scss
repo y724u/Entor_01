@@ -185,3 +185,83 @@ about
   }
 }
 
+/*================================================================
+products
+================================================================*/ 
+
+.product {
+  margin: 60px ;
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+}
+
+.product_cards {
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  
+}
+
+.product_card {
+  width: calc(33.333333% - 50px);
+  margin: 0 75px 60px 0;
+}
+
+.product_card:nth-child(3n){
+  margin-right: 0;
+}
+
+.product_card img {
+  width: 100%;
+}
+
+
+  .product_card h2{
+     margin-top: 15px;
+     margin-bottom: 10px;
+     font-size: 14px;
+     color: #2d2d2d;
+   }
+ 
+   .product_card p {
+     font-size: 11px;
+     color: #2d2d2d;
+   }
+ 
+   .sold_out{
+     color: red;
+     font-size: 11px;
+     display: block;
+     margin-top: 15px;
+   }
+
+   .btn_view {
+    width: 32%;
+    display: block;
+    background-color: #fff;
+    letter-spacing: 0.1em;
+    border: 1px solid black;
+
+
+    a {
+      display: block;
+      padding: 15px 0;
+      font-family: 'Crimson Text',"Yu Mincho Medium", "游明朝体", ;
+      text-decoration: none;
+    }
+  }
+
+  .btn_view:hover {
+    cursor: pointer;
+      color :#ffffff;
+      background: black;
+      transition: all 0.5s;
+  }
