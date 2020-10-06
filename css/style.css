@@ -233,6 +233,7 @@ products
   background-color: #fff;
   letter-spacing: 0.1em;
   border: 1px solid black;
+  margin: 0 auto;
 }
 
 .btn_view a {
@@ -247,4 +248,50 @@ products
   color: #ffffff;
   background: black;
   transition: all 0.5s;
+}
+
+.news {
+  margin-top: 60px;
+}
+
+.news h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.news h3 {
+  font-size: 12px;
+}
+
+.news a {
+  color: #2d2d2d;
+}
+
+.news .articles:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.news .articles {
+  display: flex;
+  margin-top: 30px;
+}
+
+.news .date {
+  font-size: 14px;
+  text-align: center;
+  padding-right: 20px;
+  border-right: 1px solid #DDDDDD;
+  line-height: 20px;
+}
+
+.news .article {
+  font-size: 12px;
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+.button {
+  margin-top: 100px;
+  width: 100%;
 }
