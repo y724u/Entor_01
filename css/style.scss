@@ -90,13 +90,13 @@ top
   height: 850px;
 }
 .top_left {
-  width: 11%;
+  width: 20%;
 }
 
 .phrase {
   position: absolute;
-  margin: 100px;
-  margin-top: 24%;
+  margin: 10px;
+  margin-top: 20%;
   margin-left: 200px;
 
   h1 {
@@ -112,7 +112,7 @@ top
 
 .top_right {
   background-image: url(../images/top.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
   width: 100%;
@@ -257,7 +257,6 @@ products
   transition: all 0.5s;
 }
 
-
 /*================================================================
 news
 ================================================================*/
@@ -320,188 +319,6 @@ news
 .scroll_top:hover {
   cursor: pointer;
 }
-/*================================================================
-タブレット対応
-================================================================*/ 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-}
-
-/*================================================================
-スマホ対応
-================================================================*/ 
-@media only screen and (max-width: 767px) {
-  body .container {
-    width: auto;
-    margin: 0 20px;
-  }
-/*================================================================
-ヘッダー
-================================================================*/   
-header {
-    .header_right{
-      margin-right: 5px;
-    }
-    .header_right a {
-      padding-right: 5px;
-    }
-    .header_right a:last-child {
-      padding-left: 5px;
-    }
-  }
-/*================================================================
-top
-================================================================*/ 
-.top {
-  height: 300px;
-}
-
-.top_left {
- width: 0;
-}
-.phrase {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .phrase h1 {
-    font-size: 21px;
-  }
-/*================================================================
-about
-================================================================*/ 
-.container .about {
-  margin-top: 50px;
-  // display: block;
-  flex-direction: column;
-
-  .about_right {
-    order: 1;
-    width: 100%;
-    height: 250px;
-    margin-top: 40px;
-    background-position: center right;
-  }
-
-  .about_left {
-    order: 2;
-    width: 100%;
-    margin-top: 40px;
-    p {
-      line-height: 1.8em;
-    }
-
-    .btn {
-      width: 100%;
-    }
-  }
-}
-/*================================================================
-products
-================================================================*/
-.container .product{
-  margin-left: 0;
-  margin-top: 100px;
-}
-
-.product_cards .product_card {
-  width: calc(50% - 20px / 2);
-  margin: 0 20px 20px 0;
-}
-.product_cards .product_card:nth-child(2n) {
-    margin-right: 0px;
-  }
-  .product_cards  .product_card:nth-child(3n) {
-    margin-right: 20px;
-  }
-    .product_cards  .product_card:nth-child(6) {
-      margin-right: 0px;
-}
-
-.product_cards  .product_card:nth-child(12) {
-  margin-right: 0px;
-}
-
-.product_cards  .product_card:nth-child(18) {
-  margin-right: 0px;
-}
-
-.product_cards  .product_card:nth-child(24) {
-  margin-right: 0px;
-}
-
-.product_cards .btn_view {
-  width: 100%;
-}
-/*================================================================
-news
-================================================================*/
-.container .news {
-  margin-top: 140px;
-
-  .articles {
-    padding-left: 5%;
-    width: 65%;
-    p {
-      line-height: 1em;
-    }
-  }
-}
-.container .button {
-  .btn_view{
-    width: 100%;
-  }
-}
-/*================================================================
-footer
-================================================================*/
-footer .wrapper {
-  display: block;
-  .footer_left {
-    display: block;
-    margin: 0 auto;
-    .logo {
-      float: left;
-      a{
-        img {
-          margin-left: 250%;
-        }
-      }
-    }
-    .keika {
-     width: 20%;
-     margin: 0 auto;
-    }
-    .policy {
-      width: 40%;
-      margin-left: 10%;
-      float: left;
-      a {
-        padding-right: 10px;
-      }
-    }
-
-    .low {
-      margin-right: 3%;
-      a {
-        padding-left: 10px; 
-      }
-    }
-  }
-  .footer_right {
-    width: 165px;
-    margin: 0 auto;
-    margin-top: 20px ;
-    .copyright {
-      margin-top: 20px;
-      p {
-        padding-left: 20px;
-        padding-bottom: 50px;
-      }
-    }
-    
-  }
-}
-
-}
 
 /*================================================================
 footer
@@ -542,14 +359,13 @@ footer
   a {
     color: #2d2d2d;
   }
-  
 }
 
 .low {
   font-size: 10px;
   line-height: 40px;
   margin-left: 30px;
-  
+
   a {
     color: #2d2d2d;
   }
@@ -571,4 +387,297 @@ footer
   font-size: 10px;
   color: #657580;
   margin-top: 5px;
+}
+
+/*================================================================
+タブレット対応
+================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body .container {
+    width: auto;
+    margin: 0 60px;
+  }
+  /*================================================================
+ヘッダー
+================================================================*/
+  header {
+    .header_right {
+      margin-right: 5px;
+    }
+    .header_right a {
+      padding-right: 5px;
+    }
+    .header_right a:last-child {
+      padding-left: 5px;
+    }
+  }
+
+  /*================================================================
+top
+================================================================*/
+  .top {
+    height: 500px;
+  }
+
+  .top_left {
+    width: 0;
+  }
+  /*================================================================
+about
+================================================================*/
+  .container .about {
+    margin-top: 50px;
+    flex-direction: column;
+
+    .about_right {
+      order: 1;
+      width: 100%;
+      height: 250px;
+      margin-top: 40px;
+      background-position: center right;
+    }
+
+    .about_left {
+      order: 2;
+      width: 100%;
+      margin-top: 40px;
+      p {
+        line-height: 1.8em;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  /*================================================================
+products
+================================================================*/
+  .container .product {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .product_cards .product_card {
+    width: calc(50% - 20px / 2);
+    margin: 0 20px 20px 0;
+  }
+  .product_cards .product_card:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .product_cards .product_card:nth-child(6) {
+    margin-right: 0px;
+  }
+
+  .product_cards .product_card:nth-child(12) {
+    margin-right: 0px;
+  }
+
+  .product_cards .product_card:nth-child(18) {
+    margin-right: 0px;
+  }
+
+  .product_cards .product_card:nth-child(24) {
+    margin-right: 0px;
+  }
+
+  .product_cards .btn_view {
+    width: 100%;
+  }
+  /*================================================================
+news
+================================================================*/
+  .container .news {
+    margin-top: 140px;
+
+    .articles {
+      padding-left: 5%;
+      width: 65%;
+      p {
+        line-height: 1em;
+      }
+    }
+  }
+  .container .button {
+    .btn_view {
+      width: 100%;
+    }
+  }
+}
+
+/*================================================================
+スマホ対応
+================================================================*/
+@media only screen and (max-width: 767px) {
+  body .container {
+    width: auto;
+    margin: 0 20px;
+  }
+  /*================================================================
+ヘッダー
+================================================================*/
+  header {
+    .header_right {
+      margin-right: 5px;
+    }
+    .header_right a {
+      padding-right: 5px;
+    }
+    .header_right a:last-child {
+      padding-left: 5px;
+    }
+  }
+  /*================================================================
+top
+================================================================*/
+  .top {
+    height: 300px;
+  }
+
+  .top_left {
+    width: 0;
+  }
+  .phrase {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .phrase h1 {
+    font-size: 21px;
+  }
+  /*================================================================
+about
+================================================================*/
+  .container .about {
+    margin-top: 50px;
+    flex-direction: column;
+
+    .about_right {
+      order: 1;
+      width: 100%;
+      height: 250px;
+      margin-top: 40px;
+      background-position: center right;
+    }
+
+    .about_left {
+      order: 2;
+      width: 100%;
+      margin-top: 40px;
+      p {
+        line-height: 1.8em;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  /*================================================================
+products
+================================================================*/
+  .container .product {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .product_cards .product_card {
+    width: calc(50% - 20px / 2);
+    margin: 0 20px 20px 0;
+  }
+  .product_cards .product_card:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .product_cards .product_card:nth-child(6) {
+    margin-right: 0px;
+  }
+
+  .product_cards .product_card:nth-child(12) {
+    margin-right: 0px;
+  }
+
+  .product_cards .product_card:nth-child(18) {
+    margin-right: 0px;
+  }
+
+  .product_cards .product_card:nth-child(24) {
+    margin-right: 0px;
+  }
+
+  .product_cards .btn_view {
+    width: 100%;
+  }
+  /*================================================================
+news
+================================================================*/
+  .container .news {
+    margin-top: 140px;
+
+    .articles {
+      padding-left: 5%;
+      width: 65%;
+      p {
+        line-height: 1em;
+      }
+    }
+  }
+  .container .button {
+    .btn_view {
+      width: 100%;
+    }
+  }
+  /*================================================================
+footer
+================================================================*/
+  footer .wrapper {
+    display: block;
+    .footer_left {
+      display: block;
+      margin: 0 auto;
+      .logo {
+        float: left;
+        a {
+          img {
+            margin-left: 250%;
+          }
+        }
+      }
+      .keika {
+        width: 20%;
+        margin: 0 auto;
+      }
+      .policy {
+        width: 40%;
+        margin-left: 10%;
+        float: left;
+        a {
+          padding-right: 10px;
+        }
+      }
+
+      .low {
+        margin-right: 3%;
+        a {
+          padding-left: 10px;
+        }
+      }
+    }
+    .footer_right {
+      width: 165px;
+      margin: 0 auto;
+      margin-top: 20px;
+      .copyright {
+        margin-top: 20px;
+        p {
+          padding-left: 20px;
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
 }

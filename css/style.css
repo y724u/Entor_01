@@ -89,13 +89,13 @@ top
 }
 
 .top_left {
-  width: 11%;
+  width: 20%;
 }
 
 .phrase {
   position: absolute;
-  margin: 100px;
-  margin-top: 24%;
+  margin: 10px;
+  margin-top: 20%;
   margin-left: 200px;
 }
 
@@ -111,7 +111,7 @@ top
 
 .top_right {
   background-image: url(../images/top.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
   width: 100%;
@@ -317,8 +317,177 @@ news
 }
 
 /*================================================================
+footer
+================================================================*/
+.wrapper {
+  margin-top: 5%;
+  padding: 5% 5% 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_left {
+  display: flex;
+}
+
+.footer_left img {
+  height: auto;
+  max-height: 40px;
+  line-height: 40px;
+}
+
+.keika h2 {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 36px;
+  letter-spacing: 0.12em;
+  font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  color: #657580;
+  padding-left: 5px;
+}
+
+.policy {
+  font-size: 10px;
+  line-height: 40px;
+  margin-left: 30px;
+}
+
+.policy a {
+  color: #2d2d2d;
+}
+
+.low {
+  font-size: 10px;
+  line-height: 40px;
+  margin-left: 30px;
+}
+
+.low a {
+  color: #2d2d2d;
+}
+
+.f_color:before {
+  color: #657580;
+  font-size: 16px;
+  padding-left: 45px;
+}
+
+.i_color:before {
+  color: #657580;
+  font-size: 16px;
+  padding-left: 25px;
+}
+
+.copyright p {
+  font-size: 10px;
+  color: #657580;
+  margin-top: 5px;
+}
+
+/*================================================================
 タブレット対応
 ================================================================*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body .container {
+    width: auto;
+    margin: 0 60px;
+  }
+  /*================================================================
+ヘッダー
+================================================================*/
+  header .header_right {
+    margin-right: 5px;
+  }
+  header .header_right a {
+    padding-right: 5px;
+  }
+  header .header_right a:last-child {
+    padding-left: 5px;
+  }
+  /*================================================================
+top
+================================================================*/
+  .top {
+    height: 500px;
+  }
+  .top_left {
+    width: 0;
+  }
+  /*================================================================
+about
+================================================================*/
+  .container .about {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .container .about .about_right {
+    order: 1;
+    width: 100%;
+    height: 250px;
+    margin-top: 40px;
+    background-position: center right;
+  }
+  .container .about .about_left {
+    order: 2;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .container .about .about_left p {
+    line-height: 1.8em;
+  }
+  .container .about .about_left .btn {
+    width: 100%;
+  }
+  /*================================================================
+products
+================================================================*/
+  .container .product {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+  .product_cards .product_card {
+    width: calc(50% - 20px / 2);
+    margin: 0 20px 20px 0;
+  }
+  .product_cards .product_card:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .product_cards .product_card:nth-child(6) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(12) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(18) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(24) {
+    margin-right: 0px;
+  }
+  .product_cards .btn_view {
+    width: 100%;
+  }
+  /*================================================================
+news
+================================================================*/
+  .container .news {
+    margin-top: 140px;
+  }
+  .container .news .articles {
+    padding-left: 5%;
+    width: 65%;
+  }
+  .container .news .articles p {
+    line-height: 1em;
+  }
+  .container .button .btn_view {
+    width: 100%;
+  }
+}
+
 /*================================================================
 スマホ対応
 ================================================================*/
@@ -474,72 +643,4 @@ footer
     padding-left: 20px;
     padding-bottom: 50px;
   }
-}
-
-/*================================================================
-footer
-================================================================*/
-.wrapper {
-  margin-top: 5%;
-  padding: 5% 5% 3%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer_left {
-  display: flex;
-}
-
-.footer_left img {
-  height: auto;
-  max-height: 40px;
-  line-height: 40px;
-}
-
-.keika h2 {
-  display: inline-block;
-  line-height: 40px;
-  font-size: 36px;
-  letter-spacing: 0.12em;
-  font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-  color: #657580;
-  padding-left: 5px;
-}
-
-.policy {
-  font-size: 10px;
-  line-height: 40px;
-  margin-left: 30px;
-}
-
-.policy a {
-  color: #2d2d2d;
-}
-
-.low {
-  font-size: 10px;
-  line-height: 40px;
-  margin-left: 30px;
-}
-
-.low a {
-  color: #2d2d2d;
-}
-
-.f_color:before {
-  color: #657580;
-  font-size: 16px;
-  padding-left: 45px;
-}
-
-.i_color:before {
-  color: #657580;
-  font-size: 16px;
-  padding-left: 25px;
-}
-
-.copyright p {
-  font-size: 10px;
-  color: #657580;
-  margin-top: 5px;
 }
