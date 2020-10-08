@@ -1,6 +1,9 @@
 @charset "UTF-8";
+/*================================================================
+common
+================================================================*/
 body {
-  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", serif;
   color: #2d2d2d;
   letter-spacing: 0.12em;
   line-height: 1em;
@@ -8,7 +11,7 @@ body {
 
 body .container {
   width: auto;
-  margin: 0 60px;
+  margin: 0 200px;
 }
 
 body a {
@@ -33,6 +36,7 @@ header .header_nav {
 
 header .header_left {
   padding-top: 15px;
+  margin-left: 50px;
 }
 
 header p:hover {
@@ -47,12 +51,13 @@ header img {
 
 header p {
   font-size: 20px;
-  color: #7C8893;
+  color: #7c8893;
 }
 
 header .header_right {
   display: inline-block;
   line-height: 95px;
+  margin-right: 50px;
 }
 
 header .header_right a {
@@ -64,15 +69,15 @@ header .header_right a:last-child {
 }
 
 header .search {
-  color: #7C8893;
+  color: #7c8893;
 }
 
 header .cart {
-  color: #7C8893;
+  color: #7c8893;
 }
 
 header .bars {
-  color: #7C8893;
+  color: #7c8893;
 }
 
 /*================================================================
@@ -81,23 +86,22 @@ top
 .top {
   display: flex;
   height: 850px;
-  position: relative;
 }
 
 .top_left {
-  width: 19%;
+  width: 11%;
 }
 
 .phrase {
   position: absolute;
   margin: 100px;
-  margin-top: 25%;
-  margin-left: 150px;
+  margin-top: 24%;
+  margin-left: 200px;
 }
 
 .phrase h1 {
   font-size: 32px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-weight: 100;
 }
 
@@ -110,14 +114,14 @@ top
   background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
-  width: 81%;
+  width: 100%;
 }
 
 /*================================================================
 about
 ================================================================*/
 .about {
-  margin-top: 50px;
+  margin-top: 200px;
   display: flex;
   justify-content: space-between;
 }
@@ -250,6 +254,9 @@ products
   transition: all 0.5s;
 }
 
+/*================================================================
+news
+================================================================*/
 .news {
   margin-top: 60px;
 }
@@ -281,7 +288,7 @@ products
   font-size: 14px;
   text-align: center;
   padding-right: 20px;
-  border-right: 1px solid #DDDDDD;
+  border-right: 1px solid #dddddd;
   line-height: 20px;
 }
 
@@ -294,4 +301,244 @@ products
 .button {
   margin-top: 100px;
   width: 100%;
+}
+
+.scroll {
+  margin-top: 100px;
+}
+
+.scroll_top p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.scroll_top:hover {
+  cursor: pointer;
+}
+
+/*================================================================
+タブレット対応
+================================================================*/
+/*================================================================
+スマホ対応
+================================================================*/
+@media only screen and (max-width: 767px) {
+  body .container {
+    width: auto;
+    margin: 0 20px;
+  }
+  /*================================================================
+ヘッダー
+================================================================*/
+  header .header_right {
+    margin-right: 5px;
+  }
+  header .header_right a {
+    padding-right: 5px;
+  }
+  header .header_right a:last-child {
+    padding-left: 5px;
+  }
+  /*================================================================
+top
+================================================================*/
+  .top {
+    height: 300px;
+  }
+  .top_left {
+    width: 0;
+  }
+  .phrase {
+    margin-left: 70px;
+  }
+  .phrase h1 {
+    font-size: 21px;
+  }
+  /*================================================================
+about
+================================================================*/
+  .container .about {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .container .about .about_right {
+    order: 1;
+    width: 100%;
+    height: 250px;
+    margin-top: 40px;
+    background-position: center right;
+  }
+  .container .about .about_left {
+    order: 2;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .container .about .about_left p {
+    line-height: 1.8em;
+  }
+  .container .about .about_left .btn {
+    width: 100%;
+  }
+  /*================================================================
+products
+================================================================*/
+  .container .product {
+    margin-left: 0;
+    margin-top: 100px;
+  }
+  .product_cards .product_card {
+    width: calc(50% - 20px / 2);
+    margin: 0 20px 20px 0;
+  }
+  .product_cards .product_card:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(3n) {
+    margin-right: 20px;
+  }
+  .product_cards .product_card:nth-child(6) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(12) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(18) {
+    margin-right: 0px;
+  }
+  .product_cards .product_card:nth-child(24) {
+    margin-right: 0px;
+  }
+  .product_cards .btn_view {
+    width: 100%;
+  }
+  /*================================================================
+news
+================================================================*/
+  .container .news {
+    margin-top: 140px;
+  }
+  .container .news .articles {
+    padding-left: 5%;
+    width: 65%;
+  }
+  .container .news .articles p {
+    line-height: 1em;
+  }
+  .container .button .btn_view {
+    width: 100%;
+  }
+  /*================================================================
+footer
+================================================================*/
+  footer .wrapper {
+    display: block;
+  }
+  footer .wrapper .footer_left {
+    display: block;
+    margin: 0 auto;
+  }
+  footer .wrapper .footer_left .logo {
+    float: left;
+  }
+  footer .wrapper .footer_left .logo a img {
+    margin-left: 250%;
+  }
+  footer .wrapper .footer_left .keika {
+    width: 20%;
+    margin: 0 auto;
+  }
+  footer .wrapper .footer_left .policy {
+    width: 40%;
+    margin-left: 10%;
+    float: left;
+  }
+  footer .wrapper .footer_left .policy a {
+    padding-right: 10px;
+  }
+  footer .wrapper .footer_left .low {
+    margin-right: 3%;
+  }
+  footer .wrapper .footer_left .low a {
+    padding-left: 10px;
+  }
+  footer .wrapper .footer_right {
+    width: 165px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  footer .wrapper .footer_right .copyright {
+    margin-top: 20px;
+  }
+  footer .wrapper .footer_right .copyright p {
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+/*================================================================
+footer
+================================================================*/
+.wrapper {
+  margin-top: 5%;
+  padding: 5% 5% 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_left {
+  display: flex;
+}
+
+.footer_left img {
+  height: auto;
+  max-height: 40px;
+  line-height: 40px;
+}
+
+.keika h2 {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 36px;
+  letter-spacing: 0.12em;
+  font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  color: #657580;
+  padding-left: 5px;
+}
+
+.policy {
+  font-size: 10px;
+  line-height: 40px;
+  margin-left: 30px;
+}
+
+.policy a {
+  color: #2d2d2d;
+}
+
+.low {
+  font-size: 10px;
+  line-height: 40px;
+  margin-left: 30px;
+}
+
+.low a {
+  color: #2d2d2d;
+}
+
+.f_color:before {
+  color: #657580;
+  font-size: 16px;
+  padding-left: 45px;
+}
+
+.i_color:before {
+  color: #657580;
+  font-size: 16px;
+  padding-left: 25px;
+}
+
+.copyright p {
+  font-size: 10px;
+  color: #657580;
+  margin-top: 5px;
 }
