@@ -3,7 +3,8 @@
 common
 ================================================================*/
 body {
-  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN",
+ HG明朝E, "ＭＳ Ｐ明朝", serif;
   color: #2d2d2d;
   letter-spacing: 0.12em;
   line-height: 1em;
@@ -27,16 +28,23 @@ header
 ================================================================*/
 header {
   height: 95px;
+  /* position: fixed;
+  width: 100%; */
 }
 
 header .header_nav {
   display: flex;
   justify-content: space-between;
+  z-index: 30;
+  position: fixed;
+  width: 100%;
+  background: #fff;
 }
 
 header .header_left {
   padding-top: 15px;
   margin-left: 50px;
+  /* position: fixed; */
 }
 
 header p:hover {
@@ -52,6 +60,7 @@ header img {
 header p {
   font-size: 20px;
   color: #7c8893;
+  margin-top: 5px;
 }
 
 header .header_right {
@@ -341,7 +350,8 @@ footer
   line-height: 40px;
   font-size: 36px;
   letter-spacing: 0.12em;
-  font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体",
+ "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   color: #657580;
   padding-left: 5px;
 }
