@@ -13,7 +13,7 @@ body {
 
   .container {
     width: auto;
-    margin: 0 200px;
+    margin: 0 150px;
   }
 
   a {
@@ -34,6 +34,10 @@ header {
   .header_nav {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 30;
   }
 
   .header_left {
@@ -52,8 +56,9 @@ header {
   }
 
   p {
-    font-size: 20px;
+    font-size: 18px;
     color: #7c8893;
+    margin-top: 5px;
   }
   .header_right {
     display: inline-block;
@@ -113,7 +118,7 @@ top
 .top_right {
   background-image: url(../images/top.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -183,7 +188,7 @@ products
 ================================================================*/
 
 .product {
-  margin: 60px;
+  margin: 60px 60px 60px 0;
 
   h2 {
     font-size: 28px;
@@ -205,14 +210,26 @@ products
 .product_card {
   width: calc(33.333333% - 50px);
   margin: 0 75px 60px 0;
+  overflow: hidden;
+  backface-visibility: hidden;
+  // position: relative;
 }
-
 .product_card:nth-child(3n) {
   margin-right: 0;
 }
 
 .product_card img {
   width: 100%;
+  transition-duration: 0.8s;
+  // margin-bottom: 15px;
+}
+
+.product_card img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+  opacity: 0.7;
+  // display: inline-block;
+  // overflow: hidden;
 }
 
 .product_card h2 {
@@ -220,6 +237,8 @@ products
   margin-bottom: 10px;
   font-size: 14px;
   color: #2d2d2d;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .product_card p {
@@ -235,7 +254,7 @@ products
 }
 
 .btn_view {
-  width: 32%;
+  width: 40%;
   display: block;
   background-color: #fff;
   letter-spacing: 0.1em;
@@ -258,11 +277,81 @@ products
 }
 
 /*================================================================
+brand
+================================================================*/
+.brand {
+  margin-top: 60px;
+  p {
+    font-size: 16px;
+    padding: 35px;
+    text-align: center;
+  }
+
+  .brand_lists {
+    width: 100%;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+
+    .bland_list {
+      height: 80px;
+      // padding-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border: 1px solid #dddddd;
+      position: relative;
+      width: calc(33.333333% - 50px);
+      margin-bottom: 20px;
+      a {
+        color: #2d2d2d;
+        text-align: center;
+        padding-left: 20px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    width: 100%;
+
+    .btn {
+      width: calc(100% - 100px / 2);
+      display: block;
+      background-color: #fff;
+      letter-spacing: 0.1em;
+      border: 1px solid black;
+      height: 100px;
+
+      a {
+        display: block;
+        padding: 15px 0;
+        font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
+        text-decoration: none;
+        color: #2d2d2d;
+      }
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      background: black;
+      transition: all 0.5s;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+/*================================================================
 news
 ================================================================*/
 
 .news {
-  margin-top: 60px;
+  margin-top: 150px;
 
   h2 {
     font-size: 28px;
@@ -612,6 +701,75 @@ products
   .product_cards .btn_view {
     width: 100%;
   }
+
+  /*================================================================
+brand
+================================================================*/
+  .brand {
+    margin-top: 60px;
+    p {
+      font-size: 16px;
+      padding: 33px;
+      text-align: center;
+    }
+
+    .brand_lists {
+      width: 100%;
+      margin-top: 30px;
+      flex-wrap: none;
+      width: 100%;
+      justify-content: none;
+      display: block;
+
+      .bland_list {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid #dddddd;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+        a {
+          color: #2d2d2d;
+          text-align: center;
+          padding-left: 20px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .buttons {
+      display: block;
+      width: 100%;
+      .btn {
+        width: 100%;
+        display: block;
+        background-color: #fff;
+        letter-spacing: 0.1em;
+        border: 1px solid black;
+        height: 100px;
+
+        a {
+          display: block;
+          padding: 15px 0;
+          font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
+          text-decoration: none;
+          color: #2d2d2d;
+        }
+      }
+
+      .btn:hover {
+        cursor: pointer;
+        background: black;
+        transition: all 0.5s;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
   /*================================================================
 news
 ================================================================*/

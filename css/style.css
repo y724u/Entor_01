@@ -3,8 +3,7 @@
 common
 ================================================================*/
 body {
-  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN",
- HG明朝E, "ＭＳ Ｐ明朝", serif;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", HG明朝E, "ＭＳ Ｐ明朝", serif;
   color: #2d2d2d;
   letter-spacing: 0.12em;
   line-height: 1em;
@@ -12,7 +11,7 @@ body {
 
 body .container {
   width: auto;
-  margin: 0 200px;
+  margin: 0 150px;
 }
 
 body a {
@@ -28,23 +27,20 @@ header
 ================================================================*/
 header {
   height: 95px;
-  /* position: fixed;
-  width: 100%; */
 }
 
 header .header_nav {
   display: flex;
   justify-content: space-between;
-  z-index: 30;
-  position: fixed;
   width: 100%;
-  background: #fff;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 30;
 }
 
 header .header_left {
   padding-top: 15px;
   margin-left: 50px;
-  /* position: fixed; */
 }
 
 header p:hover {
@@ -58,7 +54,7 @@ header img {
 }
 
 header p {
-  font-size: 20px;
+  font-size: 18px;
   color: #7c8893;
   margin-top: 5px;
 }
@@ -121,7 +117,7 @@ top
 .top_right {
   background-image: url(../images/top.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -189,7 +185,7 @@ about
 products
 ================================================================*/
 .product {
-  margin: 60px;
+  margin: 60px 60px 60px 0;
 }
 
 .product h2 {
@@ -211,6 +207,8 @@ products
 .product_card {
   width: calc(33.333333% - 50px);
   margin: 0 75px 60px 0;
+  overflow: hidden;
+  backface-visibility: hidden;
 }
 
 .product_card:nth-child(3n) {
@@ -219,6 +217,13 @@ products
 
 .product_card img {
   width: 100%;
+  transition-duration: 0.8s;
+}
+
+.product_card img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+  opacity: 0.7;
 }
 
 .product_card h2 {
@@ -226,6 +231,8 @@ products
   margin-bottom: 10px;
   font-size: 14px;
   color: #2d2d2d;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .product_card p {
@@ -241,7 +248,7 @@ products
 }
 
 .btn_view {
-  width: 32%;
+  width: 40%;
   display: block;
   background-color: #fff;
   letter-spacing: 0.1em;
@@ -264,10 +271,82 @@ products
 }
 
 /*================================================================
+brand
+================================================================*/
+.brand {
+  margin-top: 60px;
+}
+
+.brand p {
+  font-size: 16px;
+  padding: 35px;
+  text-align: center;
+}
+
+.brand .brand_lists {
+  width: 100%;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.brand .brand_lists .bland_list {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #dddddd;
+  position: relative;
+  width: calc(33.333333% - 50px);
+  margin-bottom: 20px;
+}
+
+.brand .brand_lists .bland_list a {
+  color: #2d2d2d;
+  text-align: center;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.brand .buttons {
+  display: flex;
+  width: 100%;
+}
+
+.brand .buttons .btn {
+  width: calc(100% - 100px / 2);
+  display: block;
+  background-color: #fff;
+  letter-spacing: 0.1em;
+  border: 1px solid black;
+  height: 100px;
+}
+
+.brand .buttons .btn a {
+  display: block;
+  padding: 15px 0;
+  font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+.brand .buttons .btn:hover {
+  cursor: pointer;
+  background: black;
+  transition: all 0.5s;
+}
+
+.brand .buttons .btn:hover a {
+  color: #ffffff;
+}
+
+/*================================================================
 news
 ================================================================*/
 .news {
-  margin-top: 60px;
+  margin-top: 150px;
 }
 
 .news h2 {
@@ -350,8 +429,7 @@ footer
   line-height: 40px;
   font-size: 36px;
   letter-spacing: 0.12em;
-  font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体",
- "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   color: #657580;
   padding-left: 5px;
 }
@@ -590,6 +668,68 @@ products
   }
   .product_cards .btn_view {
     width: 100%;
+  }
+  /*================================================================
+brand
+================================================================*/
+  .brand {
+    margin-top: 60px;
+  }
+  .brand p {
+    font-size: 16px;
+    padding: 33px;
+    text-align: center;
+  }
+  .brand .brand_lists {
+    width: 100%;
+    margin-top: 30px;
+    flex-wrap: none;
+    width: 100%;
+    justify-content: none;
+    display: block;
+  }
+  .brand .brand_lists .bland_list {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #dddddd;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .brand .brand_lists .bland_list a {
+    color: #2d2d2d;
+    text-align: center;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .brand .buttons {
+    display: block;
+    width: 100%;
+  }
+  .brand .buttons .btn {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    letter-spacing: 0.1em;
+    border: 1px solid black;
+    height: 100px;
+  }
+  .brand .buttons .btn a {
+    display: block;
+    padding: 15px 0;
+    font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
+    text-decoration: none;
+    color: #2d2d2d;
+  }
+  .brand .buttons .btn:hover {
+    cursor: pointer;
+    background: black;
+    transition: all 0.5s;
+  }
+  .brand .buttons .btn:hover a {
+    color: #ffffff;
   }
   /*================================================================
 news
