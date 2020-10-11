@@ -275,6 +275,8 @@ products
     font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
     text-decoration: none;
     text-align: center;
+    // width: 100%;
+    // height: 100%;
   }
 }
 
@@ -327,6 +329,15 @@ brand
       letter-spacing: 0.1em;
       border: 1px solid black;
       height: 100px;
+      transition: all 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        background: black;
+        a {
+          color: #ffffff;
+        }
+      }
 
       a {
         display: block;
@@ -334,15 +345,6 @@ brand
         font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
         text-decoration: none;
         color: #2d2d2d;
-      }
-    }
-
-    .btn:hover {
-      cursor: pointer;
-      background: black;
-      transition: all 0.5s;
-      a {
-        color: #ffffff;
       }
     }
   }
@@ -373,20 +375,20 @@ news
     transition: all 0.3s;
   }
 
-  .articles {
+  .news_articles {
     display: flex;
     margin-top: 30px;
   }
 
-  .date {
+  .news_date {
     font-size: 14px;
     text-align: center;
     padding-right: 20px;
     border-right: 1px solid #dddddd;
-    line-height: 20px;
+    line-height: 40px;
   }
 
-  .article {
+  .news_article_item {
     font-size: 12px;
     margin-left: 20px;
     line-height: 40px;
@@ -432,7 +434,7 @@ footer
   line-height: 40px;
 }
 
-.keika h2 {
+.flobry h2 {
   display: inline-block;
   line-height: 40px;
   font-size: 36px;
@@ -478,6 +480,7 @@ footer
   font-size: 10px;
   color: #657580;
   margin-top: 5px;
+  text-align: right;
 }
 
 /*================================================================

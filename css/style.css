@@ -324,6 +324,16 @@ brand
   letter-spacing: 0.1em;
   border: 1px solid black;
   height: 100px;
+  transition: all 0.5s;
+}
+
+.brand .buttons .btn:hover {
+  cursor: pointer;
+  background: black;
+}
+
+.brand .buttons .btn:hover a {
+  color: #ffffff;
 }
 
 .brand .buttons .btn a {
@@ -332,16 +342,6 @@ brand
   font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
   text-decoration: none;
   color: #2d2d2d;
-}
-
-.brand .buttons .btn:hover {
-  cursor: pointer;
-  background: black;
-  transition: all 0.5s;
-}
-
-.brand .buttons .btn:hover a {
-  color: #ffffff;
 }
 
 /*================================================================
@@ -369,20 +369,20 @@ news
   transition: all 0.3s;
 }
 
-.news .articles {
+.news .news_articles {
   display: flex;
   margin-top: 30px;
 }
 
-.news .date {
+.news .news_date {
   font-size: 14px;
   text-align: center;
   padding-right: 20px;
   border-right: 1px solid #dddddd;
-  line-height: 20px;
+  line-height: 40px;
 }
 
-.news .article {
+.news .news_article_item {
   font-size: 12px;
   margin-left: 20px;
   line-height: 40px;
@@ -426,7 +426,7 @@ footer
   line-height: 40px;
 }
 
-.keika h2 {
+.flobry h2 {
   display: inline-block;
   line-height: 40px;
   font-size: 36px;
@@ -472,6 +472,7 @@ footer
   font-size: 10px;
   color: #657580;
   margin-top: 5px;
+  text-align: right;
 }
 
 /*================================================================
