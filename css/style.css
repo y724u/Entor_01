@@ -97,20 +97,20 @@ top
   width: 20%;
 }
 
-.phrase {
+.top_phrase {
   position: absolute;
   margin: 10px;
   margin-top: 20%;
   margin-left: 200px;
 }
 
-.phrase h1 {
+.top_phrase h1 {
   font-size: 32px;
   margin-bottom: 30px;
   font-weight: 100;
 }
 
-.phrase p {
+.top_phrase p {
   font-size: 12px;
 }
 
@@ -156,6 +156,13 @@ about
   background-color: #fff;
   letter-spacing: 0.1em;
   border: 1px solid black;
+  transition: all 0.5s;
+}
+
+.about .about_left .btn:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background: black;
 }
 
 .about .about_left .btn a {
@@ -163,13 +170,7 @@ about
   padding: 15px 0;
   font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
   text-decoration: none;
-}
-
-.about .about_left .btn:hover {
-  cursor: pointer;
-  color: #ffffff;
-  background: black;
-  transition: all 0.5s;
+  text-align: center;
 }
 
 .about .about_right {

@@ -99,7 +99,7 @@ top
   width: 20%;
 }
 
-.phrase {
+.top_phrase {
   position: absolute;
   margin: 10px;
   margin-top: 20%;
@@ -157,20 +157,20 @@ about
       background-color: #fff;
       letter-spacing: 0.1em;
       border: 1px solid black;
+      transition: all 0.5s;
 
+    &:hover {
+      cursor: pointer;
+      color: #ffffff;
+      background: black;
+    }
       a {
         display: block;
         padding: 15px 0;
         font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
         text-decoration: none;
+        text-align: center;
       }
-    }
-
-    .btn:hover {
-      cursor: pointer;
-      color: #ffffff;
-      background: black;
-      transition: all 0.5s;
     }
   }
 
