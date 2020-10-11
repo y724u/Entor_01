@@ -115,7 +115,7 @@ top
 }
 
 .top_right {
-  background-image: url(../images/top.jpg);
+  background-image: url(../images/top.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ about
 .about .about_right {
   height: 600px;
   width: 45%;
-  background-image: url(../images/second.jpg);
+  background-image: url(../images/about.png);
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
