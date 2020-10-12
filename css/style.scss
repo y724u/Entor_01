@@ -293,7 +293,7 @@ brand
     justify-content: space-around;
     display: flex;
 
-    .bland_list {
+    .bland_list_item {
       height: 80px;
       display: flex;
       align-items: center;
@@ -343,7 +343,7 @@ brand
         font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
         text-decoration: none;
         color: #2d2d2d;
-
+        line-height: 70px;
       }
     
   
@@ -358,7 +358,7 @@ news
 
   h2 {
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: 'Crimson Text', serif;
   }
 

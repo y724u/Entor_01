@@ -298,7 +298,7 @@ brand
   display: flex;
 }
 
-.brand .brand_lists .bland_list {
+.brand .brand_lists .bland_list_item {
   height: 80px;
   display: flex;
   align-items: center;
@@ -309,7 +309,7 @@ brand
   margin-bottom: 20px;
 }
 
-.brand .brand_lists .bland_list a {
+.brand .brand_lists .bland_list_item a {
   color: #2d2d2d;
   line-height: 44px;
   font-size: 12px;
@@ -349,6 +349,7 @@ brand
   font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
   text-decoration: none;
   color: #2d2d2d;
+  line-height: 70px;
 }
 
 /*================================================================
@@ -360,7 +361,7 @@ news
 
 .news h2 {
   font-size: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: 'Crimson Text', serif;
 }
 
