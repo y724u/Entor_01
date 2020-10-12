@@ -133,7 +133,7 @@ about
 }
 
 .about .about_left {
-  width: 45%;
+  width: 40%;
 }
 
 .about .about_left h2 {
@@ -211,8 +211,11 @@ products
 .product_card {
   width: calc(33.333333% - 50px);
   margin: 0 75px 60px 0;
-  overflow: hidden;
   backface-visibility: hidden;
+}
+
+.product_card .product_box {
+  overflow: hidden;
 }
 
 .product_card:nth-child(3n) {
