@@ -238,8 +238,6 @@ products
   margin-bottom: 10px;
   font-size: 14px;
   color: #2d2d2d;
-  display: inline-block;
-  overflow: hidden;
 }
 
 .product_card p {
@@ -270,7 +268,7 @@ products
   background: black;
 }
 
-.btn_view a {
+a {
   display: block;
   padding: 15px 0;
   font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
@@ -313,12 +311,13 @@ brand
 
 .brand .brand_lists .bland_list a {
   color: #2d2d2d;
-  line-height: 80px;
+  line-height: 44px;
   font-size: 12px;
   width: 100%;
   height: 100%;
   display: block;
-  padding-left: 30px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .brand .buttons {
@@ -345,9 +344,8 @@ brand
   color: #ffffff;
 }
 
-.brand .buttons .btn a {
+.brand a {
   display: block;
-  padding: 15px 0;
   font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
   text-decoration: none;
   color: #2d2d2d;
