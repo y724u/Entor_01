@@ -298,7 +298,7 @@ brand
   display: flex;
 }
 
-.brand .brand_lists .bland_list {
+.brand .brand_lists .bland_list_item {
   height: 80px;
   display: flex;
   align-items: center;
@@ -309,7 +309,7 @@ brand
   margin-bottom: 20px;
 }
 
-.brand .brand_lists .bland_list a {
+.brand .brand_lists .bland_list_item a {
   color: #2d2d2d;
   line-height: 80px;
   font-size: 12px;
@@ -699,7 +699,7 @@ brand
     justify-content: none;
     display: block;
   }
-  .brand .brand_lists .bland_list {
+  .brand .brand_lists .bland_list_item {
     height: 80px;
     display: flex;
     align-items: center;
@@ -709,7 +709,7 @@ brand
     width: 100%;
     margin-bottom: 20px;
   }
-  .brand .brand_lists .bland_list a {
+  .brand .brand_lists .bland_list_item a {
     color: #2d2d2d;
     text-align: center;
     padding-left: 20px;
