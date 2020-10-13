@@ -502,13 +502,17 @@ footer
   /*================================================================
 ヘッダー
 ================================================================*/
-  header .header_right {
+  .container header {
+    width: auto;
+    margin: 0 150px;
+  }
+  .container header .header_right {
     margin-right: 5px;
   }
-  header .header_right a {
+  .container header .header_right a {
     padding-right: 5px;
   }
-  header .header_right a:last-child {
+  .container header .header_right a:last-child {
     padding-left: 5px;
   }
   /*================================================================
@@ -606,14 +610,21 @@ news
   /*================================================================
 ヘッダー
 ================================================================*/
+  header {
+    width: 100%;
+  }
   header .header_right {
-    margin-right: 5px;
+    margin-right: 20px;
   }
   header .header_right a {
     padding-right: 5px;
   }
   header .header_right a:last-child {
     padding-left: 5px;
+    padding-right: 0px;
+  }
+  header .header_left {
+    margin-left: 20px;
   }
   /*================================================================
 top
@@ -629,7 +640,7 @@ top
     margin-right: 20px;
   }
   .top_phrase h1 {
-    font-size: 21px;
+    font-size: 18px;
   }
   /*================================================================
 about
