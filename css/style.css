@@ -385,7 +385,7 @@ news
 }
 
 .news .news_date {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   padding-right: 20px;
   border-right: 1px solid #dddddd;
@@ -421,7 +421,7 @@ footer
 ================================================================*/
 .wrapper {
   margin-top: 5%;
-  padding: 5% 5% 3%;
+  padding: 5% 5% 0%;
   display: flex;
   justify-content: space-between;
 }
@@ -436,14 +436,14 @@ footer
   line-height: 40px;
 }
 
-.flobry h2 {
+.logo_name {
   display: inline-block;
-  line-height: 40px;
   font-size: 36px;
   letter-spacing: 0.12em;
   font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   color: #657580;
   padding-left: 5px;
+  line-height: 40px;
 }
 
 .policy {
@@ -466,6 +466,10 @@ footer
   color: #2d2d2d;
 }
 
+.footer_right {
+  display: flex;
+}
+
 .f_color:before {
   color: #657580;
   font-size: 16px;
@@ -483,6 +487,8 @@ footer
   color: #657580;
   margin-top: 5px;
   text-align: right;
+  padding-right: 5%;
+  padding-bottom: 20px;
 }
 
 /*================================================================
