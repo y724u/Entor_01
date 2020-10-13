@@ -139,7 +139,7 @@ about
 .about .about_left h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
 
 .about .about_left h3 {
@@ -194,7 +194,7 @@ products
 .product h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
 
 .product h3 {
@@ -363,7 +363,7 @@ news
 .news h2 {
   font-size: 28px;
   margin-bottom: 10px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
 
 .news h3 {
@@ -776,42 +776,24 @@ footer
   }
   footer .wrapper .footer_left {
     display: block;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
   }
-  footer .wrapper .footer_left .logo {
-    float: left;
+  footer .wrapper .policy {
+    margin-left: 0;
   }
-  footer .wrapper .footer_left .logo a img {
-    margin-left: 250%;
-  }
-  footer .wrapper .footer_left .keika {
-    width: 20%;
-    margin: 0 auto;
-  }
-  footer .wrapper .footer_left .policy {
-    width: 40%;
-    margin-left: 10%;
-    float: left;
-  }
-  footer .wrapper .footer_left .policy a {
-    padding-right: 10px;
-  }
-  footer .wrapper .footer_left .low {
-    margin-right: 3%;
-  }
-  footer .wrapper .footer_left .low a {
-    padding-left: 10px;
+  footer .wrapper .low {
+    margin-left: 0;
   }
   footer .wrapper .footer_right {
-    width: 165px;
-    margin: 0 auto;
-    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
   }
-  footer .wrapper .footer_right .copyright {
-    margin-top: 20px;
+  footer .wrapper .f_color:before {
+    padding-left: 0px;
   }
-  footer .wrapper .footer_right .copyright p {
-    padding-left: 20px;
-    padding-bottom: 50px;
+  footer .wrapper .i_color:before {
+    padding-left: 15px;
   }
 }
