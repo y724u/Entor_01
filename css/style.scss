@@ -99,6 +99,7 @@ top
 .top_left {
   width: 20%;
 }
+
 .top_phrase {
   position: absolute;
   margin: 10px;
@@ -115,6 +116,7 @@ top
     font-size: 12px;
   }
 }
+
 .top_right {
   background-image: url(../images/top.png);
   background-size: cover;
@@ -122,6 +124,7 @@ top
   background-repeat: no-repeat;
   width: 100%;
 }
+
 /*================================================================
 about
 ================================================================*/
@@ -212,20 +215,12 @@ products
   width: calc(33.333333% - 50px);
   margin: 0 75px 60px 0;
   backface-visibility: hidden;
+  .product_box {
+    overflow: hidden;
+  }
 }
 .product_card:nth-child(3n) {
   margin-right: 0;
-}
-
-.product_box {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-
-  a {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 .product_card img {
@@ -272,7 +267,6 @@ products
     color: #ffffff;
     background: black;
   }
-}
 
   a {
     display: block;
@@ -301,7 +295,7 @@ brand
     justify-content: space-around;
     display: flex;
 
-    .bland_list_item {
+    .bland_list {
       height: 80px;
       display: flex;
       align-items: center;
@@ -312,13 +306,12 @@ brand
       margin-bottom: 20px;
       a {
         color: #2d2d2d;
-        line-height: 44px;
+        line-height: 80px;
         font-size: 12px;
         width: 100%;
         height: 100%;
         display: block;
-        text-align: left;
-        padding-left: 20px;
+        padding-left: 30px;
       }
     }
   }
@@ -343,18 +336,16 @@ brand
           color: #ffffff;
         }
       }
-    }
-  }
 
       a {
         display: block;
+        padding: 15px 0;
         font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体";
         text-decoration: none;
         color: #2d2d2d;
-        line-height: 70px;
       }
-    
-  
+    }
+  }
 }
 
 /*================================================================
@@ -366,7 +357,7 @@ news
 
   h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: 'Crimson Text', serif;
   }
 
@@ -385,7 +376,7 @@ news
 
   .news_articles {
     display: flex;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .news_date {
@@ -427,7 +418,7 @@ footer
 
 .wrapper {
   margin-top: 5%;
-  padding: 5% 5% 0%;
+  padding: 5% 5% 3%;
   display: flex;
   justify-content: space-between;
 }
@@ -442,15 +433,15 @@ footer
   line-height: 40px;
 }
 
-.logo_name{
+.flobry h2 {
   display: inline-block;
+  line-height: 40px;
   font-size: 36px;
   letter-spacing: 0.12em;
   font-family: "Crimson Text", "Yu Mincho Medium", "游明朝体",
     "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
   color: #657580;
   padding-left: 5px;
-  line-height: 40px;
 }
 
 .policy {
@@ -470,10 +461,6 @@ footer
   a {
     color: #2d2d2d;
   }
-}
-
-.footer_right {
-  display: flex;
 }
 
 .f_color:before {
